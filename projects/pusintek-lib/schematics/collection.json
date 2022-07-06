@@ -9,7 +9,7 @@
         "description": "this schematics generator pusintek component",
         "factory": "./pusintek-component/index#pusintekComponentGenerator",
         "schema": "./pusintek-component/schema.json",
-        "aliases": ["suc"]
+        "aliases": ["pusintek-component"]
       }
     }
   }
