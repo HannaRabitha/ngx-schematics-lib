@@ -1,6 +1,6 @@
 {
   "name": "pusintek-lib",
-  "version": "0.0.5",
+  "version": "0.0.12",
   "scripts": {
     "build": "tsc -p tsconfig.schematics.json",
     "postbuild": "copyfiles schematics/collection.json schematics/*/schema.json schematics/*/files/** ../../dist/pusintek-lib/"
