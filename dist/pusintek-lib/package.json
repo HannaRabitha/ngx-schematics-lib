@@ -1,6 +1,6 @@
 {
   "name": "pusintek-lib",
-  "version": "0.0.12",
+  "version": "0.0.15",
   "publishConfig": {
     "registry": "http://localhost:4873/"
   },

@@ -1,20 +1,56 @@
 {
-    "$schema": "http://json-schema.org/schema",
-    "$id": "pusintek-component",
-    "title": "Pusintek UI library Component Schema",
-    "type": "object",
-    "properties": {
-      "name": {
-        "description": "The name of the component",
-        "type": "string"
-      },
-      "path": {
-        "description": "Where should be created the file",
-        "type": "string",
-        "format": "path",
-        "x-prompt": "Where should be created the file?",
-        "default": "src/app"
+  "$schema": "http://json-schema.org/schema",
+  "$id": "pusintek-component",
+  "title": "Pusintek UI library Component Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "$default": {
+        "$source": "argv",
+        "index": 0
       }
     },
-    "required": []
+    "project": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "path": {
+      "description": "Where should be created the file",
+      "type": "string",
+      "format": "path",
+      "x-prompt": "Where should be created the file?",
+      "default": "src/app"
+    },
+    "appRoot": {
+      "type": "string"
+    },
+    "sourceDir": {
+      "type": "string",
+      "default": "src"
+    },
+
+    "module": {
+      "type": "string",
+      "description": "The declaring module.",
+      "alias": "m"
+    },
+    "export": {
+      "type": "boolean",
+      "default": false,
+      "description": "Export component from module?"
+    },
+    "model": {
+      "type": "string",
+      "default": "model.json",
+      "description": "Model describing the crud form"
+    },
+    "style": {
+      "type": "string",
+      "default": "paper-dashboard"
+    }
   }
+}

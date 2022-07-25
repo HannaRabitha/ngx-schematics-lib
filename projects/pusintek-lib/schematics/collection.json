@@ -1,15 +1,15 @@
 {
-    "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
-    "schematics": {
-      "ng-add": {
-        "description": "Add Pusintek Super UI Library to the project",
-        "factory": "./ng-add/index#ngAdd"
-      },
-      "pusintek-component": {
-        "description": "this schematics generator pusintek component",
-        "factory": "./pusintek-component/index#pusintekComponentGenerator",
-        "schema": "./pusintek-component/schema.json",
-        "aliases": ["suc"]
-      }
+  "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "ng-add": {
+      "description": "Add Pusintek Super UI Library to the project",
+      "factory": "./ng-add/index#ngAdd"
+    },
+    "menu": {
+      "description": "this schematics generator pusintek component",
+      "factory": "./pusintek-component/index#pusintekComponentGenerator",
+      "schema": "./pusintek-component/schema.json",
+      "aliases": ["crud-module"]
     }
   }
+}
